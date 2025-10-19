@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container {
+  margin: 10px;
+  max-height: fit-content;
+padding: 50px;
+border: radius 2px;
+background-color: #333;
+color: antiquewhite;
+text-align: center;
+border-radius: 50px;
+border-color: rgb(233, 171, 160);
+box-shadow: 2px 2px 2px 8px rgb(233, 160, 140);
+
+}
+
+
+
+
+#calculator {
+  position:relative;
+  width: 10px;
+  background-color: #290404;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: flex;
+  left: 75%;
+  transform: translate(-5%, 40%);
+  margin-bottom: 50%; 
+
+  /* Adjust as needed */
+
+}
+#display {
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #d5d1ab;
+  border-radius: 10px;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  background-color: #6dc7f1;
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  color: rgb(18, 6, 6);
+}
+        
+.button:hover {
+  background-color: #0288d1;
+  transform: scale(1.1);
+        
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button.clear {
+  background-color: #2285ff;
+}
+
+.button.clear:hover {
+  background-color: #1920e6;
+}
+
+.button.equal {
+  background-color: #c35c4a;
+}
+
+.button.equal:hover {
+  background-color: #9f3838;
+}
+
+.button.operator {
+  background-color: #fcf33d;
+}
+
+.button.operator:hover {
+  background-color: #898017;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}

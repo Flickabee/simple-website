@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+
+<header>
+  <h1>My Header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</header>
+
+<ul class="topnav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<div class="flex-container">
+  <div>
+    <h2>Side</h2>
+    <p>Where we solve your accounting problems of tomorrow, today!<br>Try out the 
+          calculator to start saving now on your investments.</p>
+  </div>
+
+  <div>
+    <h2>Calulator</h2>
+        <div class="calculator"> <!-- This is the frame of the calculator. -->
+        <input type="text" id="display" class="display"disabled> <!-- This is the frame of the calculator. 'disabled' is placed here to wait until other operations can occur first. -->
+        <div class="buttons">
+            <button class="button clear" onclick="clearDisplay()">C</button>
+            <button class="button operator" onclick="appendOperation('/')">/</button>
+            <button class="button operator" onclick="appendOperation('*')">*</button>
+            <button class="button operator" onclick="appendOperation('-')">-</button>
+
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="appendOperation('+')">+</button>
+
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button equal" onclick="calculate()">=</button> 
+
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button" onclick="appendNumber('0')">0</button>
+        </div>
+  </div>
+
+  <div>
+<script src="main.js"></script>
+</div>
+    
+</body>
+</html>
