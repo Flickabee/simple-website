@@ -1,36 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ledger ProSolutions</title>
+    </head>
+<!-- Header -->
+<div class="header">
+  <h1>Ledger ProSolutions</h1>
+</div>
 
-    <body>
 
-<header>
-  <h1>My Header</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</header>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Email</a>
+  <a href="#">Contact</a>
+</div>
 
-<ul class="topnav">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">News</a></li>
-  <li><a href="#">Contact</a></li>
-  <li><a href="#">About</a></li>
-</ul>
+    
+<body>
+   <main>
+<div class="parent">
+        <div class="div1">Where we solve your accounting problems of tomorrow, today!<br>Try out the 
+          calculator to start saving now on your investments.<br>
+        
+</div>
+    <!-- The flexible grid (content) -->
 
-<div class="flex-container">
-  <div>
-    <h2>Side</h2>
-    <p>Where we solve your accounting problems of tomorrow, today!<br>Try out the 
-          calculator to start saving now on your investments.</p>
+  <div class="box">
+  
   </div>
+  <div class="box1">
 
-  <div>
-    <h2>Calulator</h2>
-        <div class="calculator"> <!-- This is the frame of the calculator. -->
+    <div class="calculator"> <!-- This is the frame of the calculator. -->
         <input type="text" id="display" class="display"disabled> <!-- This is the frame of the calculator. 'disabled' is placed here to wait until other operations can occur first. -->
         <div class="buttons">
             <button class="button clear" onclick="clearDisplay()">C</button>
@@ -53,11 +59,9 @@
             <button class="button" onclick="appendNumber('3')">3</button>
             <button class="button" onclick="appendNumber('0')">0</button>
         </div>
-  </div>
-
-  <div>
-<script src="main.js"></script>
-</div>
-    
+    </div>
+    </div>
+    <script src="main.js"></script> <!--placed at end so as the html can load first and the script understands what it has to do -->
+    </main>
 </body>
 </html>
