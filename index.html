@@ -1,67 +1,59 @@
-<html>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Code By Flicka</title>
-    </head>
-<!-- Header -->
-<div class="header">
-  <h1>Ledger ProSolutions</h1>
-</div>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Email</a>
-  <a href="#">Contact</a>
-</div>
-
-    
 <body>
-   <main>
-<div class="parent">
-        <div class="div1">Where we solve your accounting problems of tomorrow, today!<br>Try out the 
-          calculator to start saving now on your investments.<br>
-        
-</div>
-    <!-- The flexible grid (content) -->
 
-  <div class="box">
-  
-  </div>
-  <div class="box1">
+    <div class="container active" id="container">
+        <header class="header">
+            <a href="#" class="logo">Flicka.</a>
 
-    <div class="calculator"> <!-- This is the frame of the calculator. -->
-        <input type="text" id="display" class="display"disabled> <!-- This is the frame of the calculator. 'disabled' is placed here to wait until other operations can occur first. -->
-        <div class="buttons">
-            <button class="button clear" onclick="clearDisplay()">C</button>
-            <button class="button operator" onclick="appendOperation('/')">/</button>
-            <button class="button operator" onclick="appendOperation('*')">*</button>
-            <button class="button operator" onclick="appendOperation('-')">-</button>
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
 
-            <button class="button" onclick="appendNumber('7')">7</button>
-            <button class="button" onclick="appendNumber('8')">8</button>
-            <button class="button" onclick="appendNumber('9')">9</button>
-            <button class="button operator" onclick="appendOperation('+')">+</button>
+            <div class="toggle-icon">
+                <i class='bx bx-moon'></i>
+            </div>
+        </header>
 
-            <button class="button" onclick="appendNumber('4')">4</button>
-            <button class="button" onclick="appendNumber('5')">5</button>
-            <button class="button" onclick="appendNumber('6')">6</button>
-            <button class="button equal" onclick="calculate()">=</button> 
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Flicka</h1>
+                <h3>And I'm a <span>Student Web Designer</span></h3>
+                <p>Well hello there! You lucky thing, you've somehow found me!</p>
 
-            <button class="button" onclick="appendNumber('1')">1</button>
-            <button class="button" onclick="appendNumber('2')">2</button>
-            <button class="button" onclick="appendNumber('3')">3</button>
-            <button class="button" onclick="appendNumber('0')">0</button>
-        </div>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+
+                <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="final.png">
+            </div>
+        </section>
     </div>
-    </div>
-    <script src="main.js"></script> <!--placed at end so as the html can load first and the script understands what it has to do -->
-    </main>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
